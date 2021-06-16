@@ -1,7 +1,7 @@
 /* Manifest File */
 @import 'abstracts/variables'; 
-//@import 'abstracts/functions'; 
 @import 'abstracts/mixins'; 
+//@import 'abstracts/functions'; 
 //@import 'abstracts/placeholders'; 
 
 //@import 'vendors/bootstrap'; 
@@ -16,10 +16,11 @@
 @import 'layout/footer'; 
 @import 'layout/aside'; 
 @import 'layout/main'; 
+@import 'layout/navigation';
 //@import 'layout/forms'; 
-//@import 'layout/navigation';
 
-//@import 'components/buttons'; 
+@import 'components/buttons'; 
+@import 'components/input'; 
 //@import 'components/card';
 //@import 'components/highlight';
 //@import 'components/carousel'; 
