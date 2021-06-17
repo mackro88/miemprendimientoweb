@@ -1,0 +1,11 @@
+/* Buttons Styles */
+button{
+    background-color: $tangerine;
+    color: $black;
+    box-shadow: 5px 10px #888888;
+    
+    &:hover{
+        background-color: $white;
+        box-shadow: 5px 10px #4d4d4d;
+    }
+}
