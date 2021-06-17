@@ -1,0 +1,17 @@
+/* Input Styles */
+input{
+    background-color: $white;
+    font-family: $poppins;
+    font-size: $small;
+    font-weight: $regular;
+    
+    &:focus{
+       background-color: $tangerine; 
+       outline: none;
+       
+       &::placeholder{
+            color: $dark-gray;
+        }
+
+    }
+}

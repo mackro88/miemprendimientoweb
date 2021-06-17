@@ -59,4 +59,16 @@ button {
   button:hover {
     background-color: #fff; }
 
+/* Input Styles */
+input {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+  input:focus {
+    background-color: #ffaf6d;
+    outline: none; }
+    input:focus::placeholder {
+      color: #3b3b3b; }
+
 /*# sourceMappingURL=main.css.map */
