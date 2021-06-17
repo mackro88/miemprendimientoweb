@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,mBAAmB;ACAnB,sBAAsB",
-"sources": ["../sass/main.scss","../sass/abstracts/_variables.scss"],
+"mappings": "AAAA,mBAAmB;ACAnB,sBAAsB;ACAtB,uBAAuB",
+"sources": ["../sass/main.scss","../sass/abstracts/_variables.scss","../sass/base/typography.scss"],
 "names": [],
 "file": "main.css"
 }
