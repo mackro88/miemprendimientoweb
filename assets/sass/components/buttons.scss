@@ -2,10 +2,11 @@
 button{
     background-color: $tangerine;
     color: $black;
-    box-shadow: 5px 10px #888888;
+    font-family: $poppins;
+    font-size: $small;
+    font-weight: $regular;
     
     &:hover{
         background-color: $white;
-        box-shadow: 5px 10px #4d4d4d;
     }
 }

@@ -53,9 +53,10 @@ table {
 button {
   background-color: #ffaf6d;
   color: #000;
-  box-shadow: 5px 10px #888888; }
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
   button:hover {
-    background-color: #fff;
-    box-shadow: 5px 10px #4d4d4d; }
+    background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
