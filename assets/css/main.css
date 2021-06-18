@@ -1,6 +1,34 @@
 /* Manifest File */
 /* Variables Styles */
 /* Mixins Styles */
+/* Animations Styles */
+.gear {
+  animation: spin 3s linear infinite normal;
+  transform-origin: 80% 80%; }
+
+.selector {
+  animation: move-right 2s linear infinite alternate; }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes move-right {
+  0% {
+    transform: translate(0px); }
+  100% {
+    transform: translate(100px); } }
 /* Reset Styles Reset.css */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -213,6 +241,10 @@ p {
     font-size: 14px; }
     .courses__item a:hover {
       color: #ffaf6d; }
+.courses__icon {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Main Styles */
 .container {
