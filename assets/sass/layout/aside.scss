@@ -1,0 +1,57 @@
+/* Aside Styles */
+.aside{
+    box-sizing: border-box;
+    position: relative;
+    border: .5px solid $dark-gray;
+    padding: 1rem;
+    
+}
+.info{
+    text-align: center;
+    
+    &__pic{
+        border-radius: 50%;
+        border: 1px solid $gray;
+        width: 40%;
+    }
+    
+    &__social{
+        margin-top: .5rem;
+        
+        & i{
+            margin-left: .2rem;
+            margin-right: .2rem;
+        }
+    }
+}
+.courses{
+    
+    &__title{
+        background-color: $dark-gray;
+        color: $white;
+        font-family: $poppins;
+        font-weight: $regular;
+        padding: .4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        
+    }
+    
+    &__list{
+        padding-left: 1rem;
+        list-style: circle;
+    }
+    
+    &__item{
+        padding-bottom: .5rem;
+        
+        a{
+            font-family: $poppins;
+            font-size: $small;
+            
+            &:hover{
+                color: $tangerine;
+            }
+        }
+    }
+}

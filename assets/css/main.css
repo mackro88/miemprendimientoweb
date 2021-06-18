@@ -24,7 +24,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -52,19 +53,33 @@ table {
 /* Typography Styles */
 /* Base Styles */
 img {
-  position: absolute;
   width: 100%;
   height: auto; }
 
-h1 {
+h1, h2, h3 {
   font-size: 20px;
   font-weight: 700;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  color: #060606;
+  margin-top: .8rem; }
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #060606; }
+
+h3 {
+  font-size: 16px;
+  color: #060606; }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6rem;
+  color: #2e1503;
+  margin-top: .8rem;
+  text-align: justify; }
 
 /* Grid Styles */
 .container {
@@ -73,11 +88,13 @@ p {
   @media (max-width: 720px) {
     .container {
       -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      grid-row-gap: 1rem; } }
   @media (min-width: 721px) {
     .container {
       -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem; } }
 
 .main {
   display: -ms-grid;
@@ -152,25 +169,70 @@ p {
     .newsletter__suscribe {
       margin-left: 1.5rem; } }
 
+/* Aside Styles */
+.aside {
+  box-sizing: border-box;
+  position: relative;
+  border: 0.5px solid #3b3b3b;
+  padding: 1rem; }
+
+.info {
+  text-align: center; }
+  .info__pic {
+    border-radius: 50%;
+    border: 1px solid #aaaaaa;
+    width: 40%; }
+  .info__social {
+    margin-top: .5rem; }
+    .info__social i {
+      margin-left: .2rem;
+      margin-right: .2rem; }
+
+.courses__title {
+  background-color: #3b3b3b;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: .4rem;
+  text-align: center;
+  margin-bottom: 1rem; }
+.courses__list {
+  padding-left: 1rem;
+  list-style: circle; }
+.courses__item {
+  padding-bottom: .5rem; }
+  .courses__item a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px; }
+    .courses__item a:hover {
+      color: #ffaf6d; }
+
 /* Main Styles */
 .container {
   position: relative;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  margin-top: auto; }
+  padding: 1rem 3rem; }
 
 .main {
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  border: 0.5px solid #3b3b3b;
+  padding: 1rem; }
 
 .blog-entry {
   width: 100%;
   height: auto;
   display: block;
-  box-sizing: border-box; }
-  .blog-entry h1 {
-    font-size: 20px; }
+  box-sizing: border-box;
+  border: 0.5px solid #aaaaaa;
+  padding: .5rem;
+  margin-bottom: .5rem; }
+  .blog-entry__actions {
+    margin-top: .8rem; }
+  .blog-entry i {
+    margin-right: .5rem; }
 
 /* Nav Styles */
 .nav {

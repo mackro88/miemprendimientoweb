@@ -1,17 +1,32 @@
 /* Base Styles */
 img{
-    position: absolute;
     width: 100%;
     height: auto;
 }
 
-h1{
+h1, h2, h3{
     font-size: $large;
     font-weight: $bold;
     font-family: $ubuntu;
+    color: $sable;
+    margin-top: .8rem;
+}
+h2{
+    font-family: $poppins;
+    font-size: $medium;
+    color: $sable;
+}
+h3{
+    font-size: $medium;
+    color: $sable;
 }
 p{
-    font-size: $medium;
+    font-size: $small;
     font-weight: $regular;
     font-family: $ubuntu;
+    line-height: 1.6rem;
+    color: $charcoal;
+    margin-top: .8rem;
+    text-align: justify;
+    
 }
