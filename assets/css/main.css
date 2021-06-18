@@ -1,5 +1,6 @@
 /* Manifest File */
 /* Variables Styles */
+/* Mixins Styles */
 /* Reset Styles Reset.css */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,6 +50,22 @@ table {
   border-spacing: 0; }
 
 /* Typography Styles */
+/* Base Styles */
+img {
+  position: absolute;
+  width: 100%;
+  height: auto; }
+
+/* Grid Styles */
+.container {
+  display: grid; }
+  @media (max-width: 420px) {
+    .container {
+      grid-template-columns: 1fr; } }
+  @media (min-width: 421px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr); } }
+
 /* Buttons Styles */
 button {
   background-color: #ffaf6d;

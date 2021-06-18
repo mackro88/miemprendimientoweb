@@ -8,5 +8,10 @@ $tangerine: #ffaf6d;
 $orange: #ffa500;
 
 // Input Placeholder
-$gray: rgb(180, 180, 180);
 $dark-gray: rgb(59, 59, 59);
+
+//Breakpoints devices
+$breakpoints: (
+    'tall': (max-width: 420px),
+    'wide': (min-width: 421px)
+);

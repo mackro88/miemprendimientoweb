@@ -1,0 +1,10 @@
+/* Grid Styles */
+.container{
+    display: grid;
+    @include respond-to('tall') {
+        grid-template-columns: 1fr;
+    }
+    @include respond-to('wide') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
