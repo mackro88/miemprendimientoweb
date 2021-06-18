@@ -6,7 +6,15 @@
     box-sizing: border-box;
 }
 .hero{
-    width: 100%;
+    width: auto;
     height: 100%;
     position: relative;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+    @include respond-to('wide') {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
