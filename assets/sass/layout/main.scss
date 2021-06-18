@@ -7,7 +7,6 @@
     margin-top: auto;
 }
 .main{
-    display: block;
     box-sizing: border-box;
     position: relative;
 }
@@ -16,4 +15,8 @@
     height: auto;
     display: block;
     box-sizing: border-box;
+    
+    h1{
+        font-size: $large;
+    }
 }

@@ -11,3 +11,22 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.main{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.footer{
+    display: -ms-grid;
+    display: grid;
+    @include respond-to('tall') {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    @include respond-to('wide') {
+        -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    }
+}

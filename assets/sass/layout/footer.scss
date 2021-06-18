@@ -1,0 +1,54 @@
+/* Footer Styles */
+.footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: $sable;
+    color: $white;
+    box-sizing: border-box;
+    font-family: $poppins;
+    font-weight: $regular;
+    font-size: $small;
+    padding: 2rem;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 1rem;
+    
+    @include respond-to('wide') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+}
+.newsletter{
+    text-align: center;
+    
+    @include respond-to('wide') {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        text-align: unset;
+    }
+    
+    &__link{
+        padding-bottom: 1rem;
+        
+        @include respond-to('wide') {
+            padding-bottom: 0;
+            margin-left: 1.5rem;
+        }
+        
+        &:hover{            
+            color: $orange;
+        } 
+    }
+    
+    &__suscribe{
+        @include respond-to('wide') {
+            margin-left: 1.5rem;
+        }
+    }
+
+}

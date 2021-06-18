@@ -56,18 +56,46 @@ img {
   width: 100%;
   height: auto; }
 
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif; }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif; }
+
 /* Grid Styles */
 .container {
   display: -ms-grid;
   display: grid; }
-  @media (max-width: 520px) {
+  @media (max-width: 720px) {
     .container {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
-  @media (min-width: 521px) {
+  @media (min-width: 721px) {
     .container {
       -ms-grid-columns: 1fr 1fr;
       grid-template-columns: repeat(2, 1fr); } }
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+.footer {
+  display: -ms-grid;
+  display: grid; }
+  @media (max-width: 720px) {
+    .footer {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
+  @media (min-width: 721px) {
+    .footer {
+      -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr; } }
 
 /* Header Styles */
 .header {
@@ -81,6 +109,49 @@ img {
   height: 100%;
   position: relative; }
 
+/* Footer Styles */
+.footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #060606;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 2rem; }
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1rem; }
+  @media (min-width: 721px) {
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0; } }
+
+.newsletter {
+  text-align: center; }
+  @media (min-width: 721px) {
+    .newsletter {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      text-align: unset; } }
+  .newsletter__link {
+    padding-bottom: 1rem; }
+    @media (min-width: 721px) {
+      .newsletter__link {
+        padding-bottom: 0;
+        margin-left: 1.5rem; } }
+    .newsletter__link:hover {
+      color: #ffa500; }
+  @media (min-width: 721px) {
+    .newsletter__suscribe {
+      margin-left: 1.5rem; } }
+
 /* Main Styles */
 .container {
   position: relative;
@@ -90,7 +161,6 @@ img {
   margin-top: auto; }
 
 .main {
-  display: block;
   box-sizing: border-box;
   position: relative; }
 
@@ -99,6 +169,8 @@ img {
   height: auto;
   display: block;
   box-sizing: border-box; }
+  .blog-entry h1 {
+    font-size: 20px; }
 
 /* Nav Styles */
 .nav {
@@ -112,7 +184,7 @@ img {
     height: 50px;
     float: left;
     padding: 1rem 2rem; }
-    @media (min-width: 521px) {
+    @media (min-width: 721px) {
       .nav__logo {
         padding: .5rem 3rem;
         width: 34px;
@@ -125,7 +197,7 @@ img {
     padding: 1.5rem 2rem;
     font-size: 30px;
     color: #fff; }
-    @media (min-width: 521px) {
+    @media (min-width: 721px) {
       .nav label {
         display: none; } }
   .nav #menu-header {
@@ -136,7 +208,7 @@ img {
     height: 0;
     padding: 0;
     overflow: hidden; }
-    @media (min-width: 521px) {
+    @media (min-width: 721px) {
       .nav__container {
         height: 100%;
         padding: 0;
@@ -144,7 +216,7 @@ img {
   .nav__list {
     height: 100%;
     padding-bottom: .5rem; }
-    @media (min-width: 521px) {
+    @media (min-width: 721px) {
       .nav__list {
         height: 100%;
         padding-right: 2rem;
@@ -153,7 +225,7 @@ img {
     margin-right: 2rem;
     margin-bottom: .5rem;
     padding-bottom: .5rem; }
-    @media (min-width: 521px) {
+    @media (min-width: 721px) {
       .nav__item {
         display: inline-block;
         height: 100%;
@@ -164,7 +236,7 @@ img {
       display: inline-block;
       font-family: "Poppins", sans-serif;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 400;
       color: #fff;
       text-decoration: none; }
       .nav__item a:hover {
@@ -185,7 +257,8 @@ input {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  width: 50%; }
   input:focus {
     background-color: #ffaf6d;
     outline: none; }

@@ -4,3 +4,14 @@ img{
     width: 100%;
     height: auto;
 }
+
+h1{
+    font-size: $large;
+    font-weight: $bold;
+    font-family: $ubuntu;
+}
+p{
+    font-size: $medium;
+    font-weight: $regular;
+    font-family: $ubuntu;
+}
